@@ -60,6 +60,7 @@
     home = "/home/wjiang";
     description = "Wenzheng Jiang";
     extraGroups = [ "wheel" "networkmanager" ];
+    shell = pkgs.zsh;
     uid = 1000;
   };
 

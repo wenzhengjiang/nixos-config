@@ -7,6 +7,7 @@
     networkmanagerapplet
     git
     google-chrome
+    tmux
     xclip
     vim_configurable 
     wget
