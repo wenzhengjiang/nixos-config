@@ -20,14 +20,33 @@
   networking.networkmanager.enable = true;
 
   # Select internationalisation properties.
-  # i18n = {
-  #   consoleFont = "Lat2-Terminus16";
-  #   consoleKeyMap = "us";
-  #   defaultLocale = "en_US.UTF-8";
-  # };
+  i18n = {
+    consoleKeyMap = "us";
+    defaultLocale = "en_US.UTF-8";
+  };
 
   # Set your time zone.
   time.timeZone = "Australia/Sydney";
+
+  fonts = {
+    enableDefaultFonts = true;
+    enableFontDir = true;
+    fonts = with pkgs; [
+      dejavu_fonts
+      source-code-pro
+      font-awesome-ttf
+      powerline-fonts
+      wqy_microhei
+      wqy_zenhei
+    ];
+    fontconfig = {
+      defaultFonts = {
+        monospace = [ "DejaVu Sans Mono" ];
+        sansSerif = [ "DejaVu Sans" ];
+        serif = [ "DejaVu Serif" ];
+      };
+    };
+  };
 
   # List services that you want to enable:
 
