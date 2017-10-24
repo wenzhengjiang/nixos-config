@@ -4,15 +4,22 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    autojump
     dropbox
     networkmanagerapplet
     git
     google-chrome
     htop
+    openvpn
+    python
+    silver-searcher
     tmux
     xclip
-    vim_configurable 
+    xfce.thunar
+    xfce.ristretto
+    xfce.tumbler
+    xflux-gui
+    xorg.xbacklight
+    vim_configurable
     wget
   ];
 }
