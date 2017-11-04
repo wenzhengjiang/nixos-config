@@ -9,9 +9,11 @@
     git
     google-chrome
     htop
+    marp
     mplayer
     openvpn
     python
+    scrot
     silver-searcher
     smplayer
     tmux
@@ -23,6 +25,7 @@
     xfce.tumbler
     xflux-gui
     xorg.xbacklight
+    unzip
     vim_configurable
     wget
   ];
