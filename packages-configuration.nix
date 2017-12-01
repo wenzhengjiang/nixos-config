@@ -5,14 +5,18 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     dropbox
+    docker
     networkmanagerapplet
     git
     google-chrome
     htop
+    lm_sensors
     marp
     mplayer
     openvpn
     python
+    okular
+    rofi
     scrot
     silver-searcher
     smplayer

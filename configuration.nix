@@ -71,21 +71,29 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.i3.enable = true;
-
+    
+  # Power management
+  services.tlp.enable = true;
+  powerManagement.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.wjiang = {
     isNormalUser = true;
     home = "/home/wjiang";
     description = "Wenzheng Jiang";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker"];
     shell = pkgs.zsh;
     uid = 1000;
   };
+
+  users.extraGroups.docker = {};
 
   nixpkgs.config.allowUnfree = true;
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "17.03";
 
+  virtualisation.docker = {
+    enable = true;
+  };
 }
