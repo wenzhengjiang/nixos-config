@@ -94,6 +94,6 @@
   system.stateVersion = "17.03";
 
   virtualisation.docker = {
-    enable = true;
+    enable = false;
   };
 }

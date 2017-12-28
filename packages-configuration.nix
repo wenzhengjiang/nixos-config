@@ -4,16 +4,19 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    arandr
     dropbox
     docker
     networkmanagerapplet
     git
     google-chrome
     htop
+    i3lock
     lm_sensors
     marp
     mplayer
     openvpn
+    php
     python
     okular
     rofi
@@ -21,6 +24,7 @@
     silver-searcher
     smplayer
     tmux
+    trash-cli
     xclip
     xfce.thunar
     xfce.thunar_volman
