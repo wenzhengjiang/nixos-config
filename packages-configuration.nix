@@ -5,15 +5,16 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     arandr
-    dropbox
+    awscli
+    dnsutils
     docker
     networkmanagerapplet
+    gcc
     git
     google-chrome
     htop
     i3lock
     lm_sensors
-    marp
     mplayer
     openvpn
     php
@@ -34,7 +35,9 @@
     xflux-gui
     xorg.xbacklight
     unzip
+    vagrant
     vim_configurable
+    virtualbox
     wget
   ];
 }
