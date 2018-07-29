@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     arandr
     awscli
+    ctags
     dnsutils
     docker
     networkmanagerapplet
@@ -17,7 +18,6 @@
     lm_sensors
     mplayer
     openvpn
-    php
     python
     okular
     rofi
